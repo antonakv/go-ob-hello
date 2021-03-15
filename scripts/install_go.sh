@@ -33,10 +33,4 @@ which go || {
     [ -f ${PROFILE}.ori ] && chown ${SUDO_USER} ${PROFILE}.ori
     chown ${SUDO_USER} ${PROFILE}
   fi
-
-  cd ~
-  wget https://raw.githubusercontent.com/antonakv/go-ob-hello/main/hello.go
-  go build hello.go
-  ./hello
-
 }
